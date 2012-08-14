@@ -44,3 +44,6 @@ build/config/buildinfo.properties
 
 #private files
 bluebot-profile.js
+
+#Other
+.zip
