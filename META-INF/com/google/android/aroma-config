@@ -27,7 +27,7 @@ viewbox(
 );
 
 textbox(
-    "Kalaker's Sense 2.1",
+    "TeamBlueRidge's Sense 2.1",
     "Changelog",
     "@update",
     resread("changelog.txt")
@@ -35,7 +35,7 @@ textbox(
 
 
 menubox(
-    "Kalaker's Sense 2.1",
+    "TeamBlueRidge's Sense 2.1",
     "All in one",
     "@apps",
     "menu.prop",
@@ -44,7 +44,7 @@ menubox(
   # TITLE                   |  SUBTITLE                                                 |   Item Icons  #
   #-------------------------+-----------------------------------------------------------+---------------#
   
-    "Install ROM",			"Install Team BlueRidge Sense 2.1.",						"@install",		#-- selected = 1
+    "Install ROM",			"Install Team BlueRidge Sense 2.1.",						"@install"		#-- selected = 1
 );
 
 if prop("menu.prop","selected")=="1" then
@@ -59,7 +59,7 @@ menubox(
   #-------------------------+-----------------------------------------------------------+---------------#
 	
 	"Default",                "Will install default features and configurations",          "@install",      #-- selected = 1
-    "Custom Install",         "Choose which program or mod features you want to installed. ", "@customize",     #-- selected = 2
+    "Custom Install",         "Choose which program or mod features you want to installed. ", "@customize"     #-- selected = 2
 );
 endif;
 
