@@ -68,7 +68,6 @@ if (prop("type.prop","selected")=="1") then
 	  "customize.prop"
 	  #edit the below to be what you want a default to be
 	  );
-    );
 endif;
 
 if (prop("type.prop","selected")=="2") then
