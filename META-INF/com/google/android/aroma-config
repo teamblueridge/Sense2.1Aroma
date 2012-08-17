@@ -129,7 +129,7 @@ setvar("retstatus",
   install(
 #simonsimons34 wuz here!@!@!
       "Installing",
-	  "<b>"+ini_get("rom_name")+"</b> are being installed.\n\n"+
+	  "<b>"+ini_get("rom_name")+"</b> is being installed.\n\n"+
       "Please wait while installation wizard installs <b>"+ini_get("rom_name")+
 	  "</b>. This may take several minutes.",
       "@install",
@@ -141,8 +141,8 @@ setvar("retstatus",
 ini_set("text_next", "Finish");
 checkviewbox(
     "Installation Completed",
-    "<#selectbg_g><b>Congratulation...</b></#>\n\n"+
-    "<b>"+ini_get("rom_name")+"</b> has been installed into your device.\n\n"+
+    "<#selectbg_g><b>Congratulations!</b></#>\n\n"+
+    "<b>"+ini_get("rom_name")+"</b> has been installed onto your device.\n\n"+
     "Installer Status: "+getvar("retstatus")+"\n\n",
     "@welcome",
     "Reboot your device now.",
