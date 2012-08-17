@@ -68,9 +68,9 @@
 # in real installation, you don't need it.... so delete the lines
 #
 #
-ui_print("@INFORMATIONS");
-ui_print("This installation was used for testing only.");
-ui_print("It won't flash anything.");
+ui_print("@INSTALLING");
+ui_print("Installing Team BlueRidge Sense 2.1");
+ui_print("We hope you enjoy it!");
 ui_print(" ");
 ui_print(" ");
 
@@ -79,16 +79,12 @@ ui_print("@Mounting & Formating Devices");
 
 set_progress(0.02);
 ui_print("  Mounting /data");
-run_program("/tmp/aroma/sleep","500");
-#
-# Example:
-# unmount("/data");
-# mount("MTD","userdata","/data");
-#
+mount("MTD","userdata","/data");
 
-set_progress(0.03);
-ui_print("  Mounting /sd-ext");
-run_program("/tmp/aroma/sleep","500");
+
+#set_progress(0.03);
+#ui_print("  Mounting /sd-ext");
+#run_program("/tmp/aroma/sleep","500");
 #
 # Example:
 # unmount("/sd-ext");
@@ -97,13 +93,10 @@ run_program("/tmp/aroma/sleep","500");
 
 set_progress(0.04);
 show_progress(0.05, "-2000"); #-- Example show_progress with time as indicator for 2 second
-ui_print("  Wait for 2 Seconds");
-run_program("/tmp/aroma/sleep","2000");
-#
-# Example:
-# unmount("/system");
+ui_print("  Mounting /system");
+mount("MTD", "system", "/system");
+ui_print("  Formatting system (skipped in tests)");
 # format("MTD", "system");
-#
 
 set_progress(0.09);
 ui_print("  Mounting /system");
